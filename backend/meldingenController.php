@@ -35,3 +35,5 @@ $statment->execute([
 ]);
 
 header("Location: ../meldingen/index.php?msg=Melding opgeslagen");
+
+?>
