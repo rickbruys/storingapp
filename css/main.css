@@ -171,7 +171,26 @@ label{
 }
 
 
+/* TABLE  */
+table{
+  width: 100%;
+}
 
+th{
+  text-align: left;
+}
+
+tr:nth-child(odd){
+  background-color: #ccc;
+}
+
+tr:first-child{
+  background-color: #999;
+}
+
+tr:hover{
+  background: #999;
+}
 
 
 
