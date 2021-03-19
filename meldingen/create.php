@@ -18,17 +18,17 @@
             <!-- naam atractie -->
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
-                <input type="text" name="attractie" id="attractie" class="form-input">
+                <input type="text" name="attractie" id="attractie" class="form-input" required>
             </div>
             <!-- type dropdown -->
             <div class="form-group">
             <label for="type">Type attractie:</label>
-            <select name="type" id="type">
+            <select name="type" id="type" required>
                 <label for="type">Type</label>
                 <option value=""> - Kies een type - </option>
                 <option value="achtbaan">Achtbaan</option>
                 <option value="draaiend">Een draaiende achtbaan</option>
-                <option value="">Kinderacthbaan</option>
+                <option value="kinder">Kinderachtbaan</option>
                 <option value="horeca">Restaurants, cafés etc.</option>
                 <option value="show">Show</option>
                 <option value="water">Water-achtbaan</option>
@@ -39,7 +39,7 @@
             <!-- capaciteit -->
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
-                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
+                <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input" required>
             </div>
             <!-- prioriteit -->
             <div class="form-group">
@@ -50,7 +50,7 @@
             <!-- melder -->
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
-                <input type="text" name="melder" id="melder" class="form-input">
+                <input type="text" name="melder" id="melder" class="form-input" required>
             </div>
             <!-- overige info -->
             <div class="form-group">
@@ -58,9 +58,9 @@
                 <textarea name="overige_info" id="overige_info" class="form-input" rows="4"></textarea>
             </div> 
 
-
-            <input type="submit" value="Verstuur melding">
-
+            <div class="form-group">
+                <input type="submit" value="Verstuur melding" id="submit">
+            </div>
         </form>
     </div>  
 
