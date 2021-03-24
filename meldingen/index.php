@@ -28,12 +28,24 @@
                 $statement->execute();
                 $meldingen = $statement->fetchAll(PDO::FETCH_ASSOC);
             ?> 
+
+            <table>
+                <tr>
+                    <th>Achtbaan</th>
+                    <th>Type</th>
+                    <th>Capaciteit</th>
+                    <th>Aanpassen</th>
+                </tr>
             <?php foreach($meldingen as $melding): ?>
-                <p> <?php 
-                    echo $melding['attractie']; 
-                    echo ", Type: "; 
-                    echo $melding['type']; ?> </p>
+                <tr>
+                    <td><?php echo $melding['attractie']?></td>
+                    <td><?php echo $melding['type']?> </td>
+                    <td><?php echo $melding['capaciteit']?></td>
+                    <td><a href="edit.php?id=<?php echo $melding['id']?>" >Aanpassen</a></td>
+                </tr>
             <?php endforeach; ?>
+            </table>
+
         </div>
     </div>  
 
