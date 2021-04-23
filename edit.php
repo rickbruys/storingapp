@@ -29,8 +29,8 @@
             
             <!-- type dropdown -->
             <div class="form-group">
-            <label for="type">Type attractie:</label>
-            <?php echo $melding['type']?>
+                <label for="type">Type attractie:</label>
+                <?php echo $melding['type']?>
             </div>
 
             <!-- capaciteit -->
