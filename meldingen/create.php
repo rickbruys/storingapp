@@ -7,6 +7,15 @@
 </head>
 
 <body>
+<?php 
+        session_start();
+        if(!isset($_SESSION['user_id'])){
+        $msg = "Je moet eerst inloggen!";
+        header("Location: ../login.php?msg=$msg"); 
+        exit; 
+    }
+?>
+
 
     <?php require_once '../header.php'; ?>
 

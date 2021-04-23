@@ -10,6 +10,14 @@
 
     <?php require_once '../header.php'; ?>
 
+    <?php 
+        session_start();
+        if(!isset($_SESSION['user_id'])){
+        $msg = "Je moet eerst inloggen!";
+        header("Location: login.php?msg=$msg"); 
+        exit; 
+    }
+?>
     <div class="container">
         <h1>Melding aanpassen</h1>
 
